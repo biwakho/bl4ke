@@ -22,11 +22,11 @@ section {
   font-optical-sizing: auto;
   font-style: normal;
   font-size: 40px;
-  text-decoration-line: underline;
+  font-weight: bold;
   color: rgb(0, 0, 0);
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 header {
@@ -45,12 +45,20 @@ header img {
   border: none;
 }
 header .headerbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header .headerbox ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 15%;
   font-size: 25px;
   padding: 0;
@@ -60,7 +68,9 @@ header .headerbox ul {
   top: 0;
   width: 100%;
   z-index: 10;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (max-width: 767px) {
   header .headerbox ul {
@@ -152,58 +162,55 @@ header .headerbox ul .header-pic {
   }
 }
 
-.box {
-  display: flex;
-  justify-content: center;
+.info-box {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.info-box h1 {
+  display: block;
 }
 
 table.info {
   background-color: #ffffff;
   font-size: 15px;
   width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
   border-collapse: collapse;
 }
 table.info td {
-  border: 1px solid black;
+  border: 2px solid black;
+  padding: 5px;
 }
 table.info td.rabel {
   color: red;
   font-family: "Josefin Sans", serif;
+  font-weight: bold;
+}
+table.info td.rabel.noti {
+  color: red;
+}
+table.info td.rabel.newr {
+  color: blue;
+}
+table.info td.rabel.remi {
+  color: blue;
 }
 table.info td a {
   color: blue;
-  text-decoration-line: underline;
-}
-
-.request {
-  text-align: center;
-  margin: 20px;
-  padding: 20px 100px 10px 100px;
-  background: rgba(255, 255, 255, 0.8);
-}
-.request .title {
-  padding: 0;
-  margin: 0;
-}
-.request a {
-  width: 500px;
-  margin: 40px 15px 0 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid black;
-  border-radius: 15px;
-}
-.request img {
-  height: 100px;
-}
-.request p {
-  font-size: 12px;
+  font-weight: 600;
 }
 
 .Discography {
   background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
   margin: 20px;
   padding: 20px 20px 10px 20px;
   text-align: center;
@@ -219,7 +226,6 @@ table.info td a {
   padding: 50px 0 20px 0;
   font-family: "Josefin Sans", serif;
   font-size: 25px;
-  text-decoration: underline;
 }
 .Discography .mytrack {
   color: red;
@@ -241,9 +247,15 @@ footer {
 .snsicon {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8%;
 }
 @media screen and (max-width: 767px) {
@@ -277,9 +289,13 @@ footer {
 .aboutbox {
   padding-top: 100px;
   margin: 0px 20px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 80px;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 767px) {
@@ -287,6 +303,14 @@ footer {
     display: block;
     text-align: center;
   }
+}
+.aboutbox .about-img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .aboutbox a {
   width: 60%;
@@ -305,7 +329,8 @@ footer {
 }
 
 .about-picture {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border: 1px solid blue;
   border-radius: 50%;
   width: 200px;
@@ -321,4 +346,4 @@ footer {
 .imgcontact {
   text-align: center;
   height: 100%;
-}/*# sourceMappingURL=scss.css.map */
+}
