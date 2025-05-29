@@ -1,0 +1,433 @@
+//マップ型変数breakpointsを定義
+$breakpoints: (
+//キー　　値
+  'sp': 'screen and (max-width: 767px)', //767px以下（スマホ）用の表示
+  'pc': 'screen and (min-width: 768px)' //768px以上（タブレット・PC）用の表示
+) !default;
+
+//メディアクエリ用のmixinを定義。デフォルト値はsp
+@mixin mq($breakpoint: sp) {
+//map-get(マップ型変数, キー)で値を取得
+  @media #{map-get($breakpoints, $breakpoint)} {
+    //この中をカスタムできる
+    @content;
+  }
+}
+
+//使用例
+// .header {
+//   height: 100px; //ＰＣ用の表示
+
+//   @include mq(sp) {
+//     height: 60px; //スマホの時だけ高さを60pxに！
+//   }
+// }
+
+/*このように @media screen and (width: 767px) { } を書かなくても、
+PC用のcssを書きながらスマホ用の表示を書き足すことができます！ */
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+ background-color: rgb(255 172 40);
+
+
+
+}
+
+section{margin: 0 10px 20px 10px;
+    display: none;
+}
+
+.titlebox{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.title{
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 40px;
+    text-decoration-line: underline;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top:30px;
+    margin-bottom: 10px;
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    margin: 0;
+    background-color:rgba($color: #ffffff, $alpha: 0.7);
+    //background-color: rgba($color: #6cbdd8, $alpha: 0.7);
+    img{
+        padding: 0%;
+        margin: 0;
+        max-height: 50px;
+        min-height: 20px;
+        min-width: 40px;
+        border: none;
+    }
+   
+
+    .headerbox{
+    display: flex;
+    justify-content: center;
+
+
+        ul{
+            
+            display: flex;
+            justify-content: center;
+            gap: 15%;
+            font-size: 25px;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            align-items: center;
+     
+          
+            @include mq(sp) { 
+                gap: 5%;
+                font-size: 15px;
+            }
+            li{
+                
+                // position: sticky;
+                margin-top: 0;
+                padding-top: 0;
+                font-family: "Josefin Sans", serif;
+                font-optical-sizing: auto;
+                font-style: normal;
+                padding: 0 20px 0 20px;
+                border: 1px solid black;
+                border-top: none;
+                border-bottom: none;
+
+            }
+            .header-pic{
+                border: none;
+          
+            }
+        }
+    }
+}
+.homebg{
+// margin-top :10px;
+padding: 15px;
+    background-color: rgb(255 172 40);
+
+}
+.Aboutbg{
+    padding: 15px;
+    background-color: rgb(255 172 40);
+}
+
+//////////firstview
+.firstview{
+position: relative;
+margin: 0;
+padding-top: 80px;
+    img{
+        min-height: 200px;
+        min-width: 280px;
+    }
+    .fv-textbox{
+        
+        position: absolute;
+        margin: 0;
+        bottom: 26px;
+        left: 26px;
+        width: 70%;
+        max-width: 700px;
+        // height: 209px;
+        background: url(../img/sp/bg_fv.png) center center no-repeat;
+        background-size: 100% 100% ;
+        padding: 20px 10px 20px 10px;
+    
+        @include mq(sp) {
+            padding: 10px;
+            bottom: 20px;
+            left: 20px;
+            width: 90%;
+
+        }
+        h1{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-weight: normal;
+            font-size: 30px;
+            @include mq(sp) { //スマホの時だけ高さを60pxに！
+                font-size: 15px;
+            }
+            &.name-sub{
+                font-size: 20px;
+                margin-bottom: 20px;
+                @include mq(sp) { //スマホの時だけ高さを60pxに！
+                    font-size: 15px;
+                }
+            }
+        }
+
+        p{
+            margin: 0;
+            padding: 0 0 0 20px;
+            @include mq(sp) { //スマホの時だけ高さを60pxに！
+                font-size: 12px;
+
+            }
+        }
+
+
+
+    }
+}
+
+// .YT{
+//     width: 100%;
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     gap: 10%;
+//     width: 80%;
+//     aspect-ratio: 16/9;
+// }
+
+////table
+.box{
+    display: flex;
+    justify-content: center;
+}
+
+table.info{
+    background-color: #ffffff;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+
+    td{
+        border: 1px solid black;
+        &.rabel{
+            color: red;
+            font-family: "Josefin Sans", serif;
+        }
+        a{
+            color: blue;
+            text-decoration-line: underline;
+        }
+    }
+    
+    // tr{
+        
+    //     display: flex;
+    //     justify-content: left;
+    //     gap: 5px;
+        
+    //     padding: 0 5px 0 5px;
+        
+    //     .rabel{
+    //         font-weight: bold;
+    //         color: red;
+    //         padding: 0 20px 0 20px;
+    //         border-right: 1px solid black;
+    //     }
+    //     .timedate{
+    //         padding: 0 10px 0 10px;
+    //         // border-right: 1px solid black;
+    //     }
+    //     .info-text{
+    //         padding: 0 10px 0 10px;
+            
+    //     }
+    // }
+
+}
+
+//////////////
+
+
+
+// .musicset{
+//     display: flex;
+//     justify-content: center;
+//     gap: 5%;
+//     margin-bottom: 20px;
+// }
+// .pic{
+//     min-width: 150px;
+//     max-width: 310px;
+// }
+// @include mq(sp) {
+//     .moviearea{
+//         zoom: 60%;
+//     }
+// }
+
+
+
+///////////////////////
+/// 
+.request{
+    text-align: center;
+    margin: 20px;
+    padding: 20px 100px 10px 100px;
+    background:rgba($color: #ffffff, $alpha:0.8 );
+    .title{
+        padding: 0;
+        margin: 0;
+    }
+    a{
+        width: 500px;
+        margin:40px 15px 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color:rgba($color: #ffffff, $alpha: 0.8);
+        border: 1px solid black;
+        border-radius: 15px;
+    }
+    img{
+        height: 100px;
+       
+        
+    }
+    p{
+        font-size: 12px;
+        
+    }
+    
+}
+
+.Discography{
+    background-color: rgba($color: #ffffff, $alpha: 0.8);
+    margin: 20px;
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+    .mytrackytbox{
+        padding: 0;
+        margin: 0;
+    }
+    .title{
+        margin: 0;
+    }
+    h2{
+        padding: 50px 0 20px 0;
+        font-family: "Josefin Sans", serif;
+        font-size: 25px;
+        text-decoration: underline;
+    }
+    .mytrack{
+        color: red;
+    }
+    .mytrackSC{
+        width: 100%;
+    }
+    .spotify{
+        margin-top: 40px;
+    }
+    .remix{
+        color: blue;
+    }
+
+
+}
+
+//////////////
+footer{
+    display: none;
+}
+.snsicon{
+ 
+    background-color:rgba($color: #ffffff, $alpha:0.8 );
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:8%;
+    @include mq(sp) {
+    gap: 5%;
+    padding: 10px 0 10px 0;
+    }
+    a{
+   text-align: center;
+    }
+    img{
+        
+        height: 35px;
+        @include mq(sp) {
+            height: 20px;
+        }
+        
+    }
+    p{
+        font-family: "Josefin Sans", serif;
+        font-size: 15px;
+        padding-top: 10px;
+        @include mq(sp) {
+            font-size: 10px;
+        }
+    }
+}
+
+//////////////About
+
+.aboutbox{
+    padding-top: 100px;
+    margin:0px 20px 0 20px ;
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    @include mq(sp) {
+        display: block;
+        text-align: center;
+        
+    }
+    a{
+        width: 60%;
+        max-height: 500px;
+        margin:40px 15px 0 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color:rgba($color: #ffffff, $alpha: 0.8);
+        border: 1px solid black;
+        border-radius: 15px;
+        // height: 200px;
+        // width: 200px;
+        min-width: 200px;
+    }
+    .about-text{
+        padding: 15px;
+        background-color:rgba($color: #ffffff, $alpha: 0.8);
+        
+    }
+    
+}
+.about-picture{
+    object-fit: cover;
+    border:1px solid blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color:rgba($color: #ffffff, $alpha: 0.8);
+    @include mq(sp) {
+        margin-bottom: 20px;
+    }
+
+}
+.imgcontact{
+    text-align: center;
+    height: 100%;
+}
+
+

@@ -1,0 +1,240 @@
+body {
+background-color: brown;
+font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+letter-spacing: 0.2em;
+color: #3c301e;
+}
+/* ヘッダーセクションスタート */
+.header{
+width: 100%;
+margin-top: -5px;
+padding: 10px;
+position: fixed;
+text-align: center;
+mix-blend-mode: difference;
+border-bottom: 1px solid black;
+}
+.header-logo{
+max-width: 100%;
+
+}
+
+.header-list{
+color: white;
+margin-top: 5px;
+font-size: 20px;
+display: flex;
+gap: 10%;
+justify-content: center;
+
+}
+
+
+/* ヘッダーセクション終わり */
+
+/*セクションタイトル*/
+
+.title{
+
+width: 100%;
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+flex-direction: column;
+align-content: space-around;
+align-items: center;
+color: #3c301e;
+}
+
+.section-title-main{
+margin-top: 20px;
+
+font-size: 62px;
+}
+
+.section-title-sub{
+
+font-size: 20px;
+}
+
+/*aboutセクション*/
+.Aboutsection{
+background-color: #f1eee4;;
+}
+.about{
+padding: 20px;
+background:#f1eee4;
+}
+
+.about-text{
+margin-top: 40px;
+font-size: 15px;
+letter-spacing: normal;
+}
+
+.about-text2{
+margin-top: 20px;
+font-size: 15px;
+letter-spacing: normal;
+}
+
+/*menu*/
+.menutitle{
+width: 100%;
+display: flex;
+justify-content: center;
+flex-wrap: nowrap;
+flex-direction: column;
+align-content: space-around;
+align-items: center;
+color: burlywood;
+}
+.menu{
+padding: 15px;
+
+}
+
+.menuset *{
+text-align: center;
+display:block;
+}
+
+.menuname{
+font-size: 22px;
+text-decoration: underline;
+color: bisque;
+}
+
+.menunamesub{
+margin-top: 10px;
+font-size: 15px;
+color: burlywood;
+}
+
+.hush{
+margin-top: 20px;
+margin-bottom: 15px;
+color: burlywood;
+}
+
+/* shopセクション */
+.shop{
+background-image:url(../img/bg-shop.png) ;
+background-position: center;
+background-size: cover;
+padding: 20px;
+padding-bottom: 50px;
+}
+
+.shop *{
+color: #f1eee4;
+}
+/*クラス指定の後半角開けて*を打つと子要素だけでなく子孫全てを指定できる*/
+
+.shopsection-title-main{
+margin-top: 20px;
+font-size: 62px;
+
+}
+
+.shopsection-title-sub{
+font-size: 20px;
+
+}
+
+.shoptext{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 40px;
+letter-spacing: normal;
+}
+
+/*form*/
+
+/*
+.form {
+  margin-top: 40px;
+}
+
+.form-input {
+  width: 100%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  padding: 14px;
+  color: black;
+}
+
+.form-submit {
+  border-radius: 4px;
+  border: none;
+  font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+  display: block;
+  margin: 10px auto 0;
+  width: 120px;
+  padding: 12px 10px;
+  color: black;
+  background-color: #a98c5f;
+}
+  */
+
+.form {
+margin-top: 40px;
+padding: 0 15% 0 15%;
+text-align: center;
+}
+
+.form-input{
+width: 100%;
+padding:10px;
+background-color:rgba(255 , 255 ,255 ,0.7);
+color: black;
+border-radius: 8px;
+border: none;
+font-size: 15px;
+font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
+margin-bottom: 20px;
+}
+
+.button{
+width: 100px;
+padding: 10px;
+color: black;
+background-color:rgba(255 , 255 ,255 ,0.7);
+border-radius: 8px;
+border: none;
+
+}
+
+/*futter*/
+.SNS{
+  background-color: #f1eee4;
+
+}
+.SNSicon{
+  padding: 20px;
+  zoom: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.SNStext{
+  margin-top: 10px;
+  letter-spacing: normal;
+}
+
+
+
+.cledit{
+  border-top: 2px solid rgba(241, 238, 228, 0.25);
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(77, 30, 0);
+}
+
+.footer-copylight{
+font-size: 12px;
+color: #f1eee4;
+}

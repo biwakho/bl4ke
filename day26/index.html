@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- 文字コードをUTF-8に設定 -->
+    <meta charset="UTF-8" />
+    <!-- スマホやタブレットでも綺麗に表示するレスポンシブ表示のための記述 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- サイトのアイコンを設定 -->
+    <link rel="shortcut icon" href="./img/IMG_5274.ico" type="image/x-icon" />
+    <!-- 検索に引っかからないようにする記述 -->
+    <meta name="robots" contents="noindex"/>
+
+    <!-- サイトのタイトル -->
+    <title>B.L4ke's Portfolio</title>
+    <!-- サイトの概要を記述-->
+    <meta name="description" content="トラックメイカー[B.L4ke]のポートフォリオサイト、Progressive Houseを中心に、爽やかな曲を作っています" />
+
+    <!-- Google Fontsを読み込む記述 -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- スタイルシートの読み込み -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="css/scss.css">
+  </head>
+<!-- あと、topは2列じゃなくて1列で
+
+【ロゴ】　　　　HOME MUSIC ABOUT
+のが画面の占有を奪わなくてスッキリするかなとか思った(聞き流しておけw)
+あと順番もABOUTが最後かな
+
+アバウトとプロフィールを別にして
+
+HOME PROFILE MUSIC(WORKS) ABOUT CONTACTが王道というかユーザ的にも馴染みやすいかもかも -->
+  <body>
+    <header class="header-box">
+     
+      <div class="headerbox">
+        <ul class="headerlist">
+          <li class="header-pic">
+              <picture>
+              <img src="./img/IMG_4410.png" alt="">
+              </picture>
+          </li>
+          <div class="homebg">
+          <li class="link"><a href="./index.html" class="Home">Home</a></li>
+        </div>
+            <li class="link"><a href="./About.html" class="About">About/Contact</a></li>
+        
+          <!-- <li class="link"><a href="" class="Music">Music</a></li> -->
+        </ul>
+      </div>
+    </header>
+  <section class="firstview">
+    <picture class="fv-img">
+      <!-- <source media="(min-width:768px )" srcset="./img/img_fv.png"> -->
+      <img src="./img/F2yAD3UaUAAUvzF.jpeg" alt>
+    </picture>
+    <div class="fv-textbox">
+      <h1>ー B.L4ke ー</h1>
+      <h1 class="name-sub">ビーレイク</h1>
+      <p class="text">滋賀県出身のトラックメイカー</p>
+      <p>明るく爽やかな曲を作っています</p>
+    </div>
+  </section>
+  <section class="info">
+    <h1 class="title">Information</h1>
+    <div class="box">
+      <table class="info">
+        <tbody>
+          <tr>
+            <td class="rabel">New Release</td>
+            <td class="timedate">2025.02.10  </td>
+            <td class="info-text"><a href="https://big-up.style/lOJvxoYD2X" target="_blank" class="info-link">2nd Albam 「Surface」Release!</a></td>
+          </tr>
+         <tr>
+            <td class="rabel">Compilation</td>
+            <td class="timedate">2025.01.14</td>
+            <td class="info-text"><a href="https://linkco.re/zDAqzRsh?lang=ja" target="_blank" class="info-link">EXPlanett. #2 -Alter Culture-</a></td>
+          </tr>
+          <tr>
+            <td class="rabel">Remix</td>
+            <td class="timedate">2023/04/17  </td>
+            <td class="info-text"><a href="https://youtu.be/OhB2Zjlh808?si=TMzcBJxW_fPVGswl" target="_blank" class="info-link">Hikaru Utada 「Stay Gold」- B.L4ke Remix</a></td>
+          </tr>
+          <tr>
+            <td class="rabel">Archive</td>
+            <td class="timedate">2025.02.10  </td>
+            <td class="info-text"><a href="" target="_blank" class="info-link">2nd Albam 「Surface」Release!</a></td>
+          </tr>
+          <tr>
+            <td class="rabel">Notice</td>
+            <td class="timedate">2025.02.10  </td>
+            <td class="info-text"><a href="" target="_blank" class="info-link">2nd Albam 「Surface」Release!</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- <ul class="infolist">
+        <li class="infocontents">
+          <a href="" class="info-text">
+          <span class="rabel">New Release</span>
+          <p class="timedate">2025.02.10</p>
+          <p class="info-text">2nd Albam 「Surface」Release!</p>
+          </a>
+        </li>
+        <li class="infocontents">
+          <a href="" class="info-text">
+          <span class="rabel">Notice</span>
+          <p class="timedate">2025.02.10</p>
+          <p class="info-text">2nd Albam 「Surface」Release!</p>
+          </a>
+        </li> 
+      </ul>  -->
+    </div>
+  </section>
+  <!-- <section class="music">
+   <div class="titlebox">
+    <h1 class="title">Music</h1>
+    </div>
+    <ul>
+      <div class="musicset">
+        <li class="pic">
+          <a href="https://big-up.style/BpQe82jzpj" target="_blank" class="1st">
+            <img src="./img/filament.jpg" alt="">
+          </a>
+        </li>
+        <li class="moviearea">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/JGzv-Bk3RPw?si=yfSdIPfXTYQ_HJ5s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+      </div>
+    </ul>
+    <ul>
+      <div class="musicset">
+        <li class="pic">
+          <a href="https://big-up.style/BpQe82jzpj" target="_blank" class="1st">
+            <img src="./img/second album.png" alt="">
+          </a>
+        </li>
+        <li class="moviearea">
+          <iframe class="iframe-end" width="560" height="315" src="https://www.youtube.com/embed/KQ1HGSbSxUU" title="[Surface]クロスフェード B.L4ke 2nd Album" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+      </div>
+    </ul>
+
+  </section> -->
+  <section class="Discography">
+    <h1 class="title">Discography</h1>
+    <div class="YTbox">
+
+      <div class="mytrack-box">
+      <h2 class="mytrack">B.L4ke Originals </h2>
+      <div class="mytrackytbox">
+        <iframe class="mytrackSC" width="100%" height="450px" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1976703924&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aqestpk6xyim" title="B.L4ke" target="_blank" style="color: #cccccc; text-decoration: none;">B.L4ke</a> · <a href="https://soundcloud.com/aqestpk6xyim/sets/surface" title="Surface" target="_blank" style="color: #cccccc; text-decoration: none;">Surface</a></div>
+        <iframe class="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/artist/4BiTG9UkhCO4cgM8JKMJvc?utm_source=generator" width="100%" height="352" frameborder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+      </div>
+
+      <div class="remixbox">
+      <h2 class="remix">Remix </h2>
+      <iframe width="100%" height="450" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1976705380&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/aqestpk6xyim" title="B.L4ke" target="_blank" style="color: #cccccc; text-decoration: none;">B.L4ke</a> · <a href="https://soundcloud.com/aqestpk6xyim/sets/remix-b-l4ke" title="Remix(B.L4ke)" target="_blank" style="color: #cccccc; text-decoration: none;">Remix(B.L4ke)</a></div>
+      </div>
+
+    </div>
+  </section>
+ 
+<section class="discography">
+
+</section>
+  <footer>
+    <div class="snsicon">
+      <a href="https://x.com/biwakho" target="_blank" class="twitter">
+      <img src="./img/x-logo-black.png" alt="" class="sns">
+      <p>X(main)</p>
+      </a>
+      <a href="https://twitter.com/B_L4kemusic" target="_blank" class="twitter">
+        <img src="./img/x-logo-black.png" alt="" class="sns">
+        <p>X(artist)</p>
+        </a>
+      <a href="https://www.youtube.com/channel/UCTIvi7DTyLTZxbF6fpjRPgA" target="_blank" >
+        <img src="./img/yt_logo.png" alt="">
+        <p>YouTube</p>
+      </a>
+      <a href="https://www.instagram.com/b.l4ke358/" target="_blank" >
+        <img src="./img/Instagram_Glyph_Gradient.png" alt="">
+        <p>Instagram</p>
+      </a>
+      <a href="https://open.spotify.com/intl-ja/artist/4BiTG9UkhCO4cgM8JKMJvc?si=AE5YQXjjT-uBuDfFHzGKsA" target="_blank" >
+        <img src="./img/Spotify_Icon_RGB_Green.png" alt="">
+        <p>Spotify</p>
+      </a>
+      <a href="https://soundcloud.com/aqestpk6xyim?ref=clipboard&p=i&c=1" target="_blank" >
+        <img src="./img/419679-1x1_SoundCloudLogo_cloudmark-f5912b-original-1645807040.jpg" alt="">
+        <p>Sound Cloud</p>
+      </a>
+      <a href="https://linktr.ee/biwako" target="_blank" >
+        <img src="./img/IMG_5274.PNG" alt="">
+        <p>Other</p>
+      </a>
+    </div>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
